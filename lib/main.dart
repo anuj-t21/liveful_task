@@ -12,14 +12,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Initializing ScreenUtil to adapt screen and font sizes.
     return ScreenUtilInit(
-      minTextAdapt: false,
-      splitScreenMode: false,
-      ensureScreenSize: true,
+      minTextAdapt: false, // Disables minimum text adaptation.
+      splitScreenMode: false, // Disables split screen mode.
+      ensureScreenSize: true, // Ensures that screen size is initialized.
       builder: (_, __) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'Liveful Taks',
+          title: 'Liveful Task',
           theme: AppTheme.darkThemeMode,
           home: const WeatherHomePage(),
         );
